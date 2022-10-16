@@ -59,10 +59,13 @@ class _MyHomePageState extends State<MyHomePage> {
       DrawerHeader(
         child: Text('Home'),
         decoration: BoxDecoration(
-          color: Colors.blue,
-        ),
+            gradient: new LinearGradient(
+                begin: FractionalOffset.topCenter,
+                end: FractionalOffset.bottomCenter,
+                colors: [Colors.white, Colors.cyanAccent, Colors.deepPurple])),
       ),
     );
+
     return Scaffold(
       appBar: AppBar(
         title: Text("Music.io"),
